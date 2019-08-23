@@ -40,4 +40,5 @@ ext {
     gsonVersion =                   '2.8.5'
     retrofitVersion =               '2.6.1'
     coroutinesVersion =             '1.0.1'
+    koinVersion =                   '2.0.1'
 }
