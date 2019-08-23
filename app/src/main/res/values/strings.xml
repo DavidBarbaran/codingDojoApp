@@ -5,4 +5,5 @@
     <string name="ingresar">Ingresar</string>
     <string name="olvide_contrasenia">Olvidé mi contraseña</string>
     <string name="quiero_registrarme">Quiero registrarme</string>
+    <string name="title_activity_home">HomeActivity</string>
 </resources>

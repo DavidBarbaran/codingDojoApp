@@ -3,8 +3,6 @@
     xmlns:dist="http://schemas.android.com/apk/distribution"
     package="com.coding.dojo">
 
-    <dist:module dist:instant="true" />
-
     <application
         android:name=".app.CodingDojoApplication"
         android:allowBackup="true"
@@ -13,6 +11,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity
+            android:name=".feature.home.HomeActivity"
+            android:label="@string/title_activity_home" />
         <activity android:name=".feature.login.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,5 +23,7 @@
             </intent-filter>
         </activity>
     </application>
+
+    <dist:module dist:instant="true" />
 
 </manifest>
