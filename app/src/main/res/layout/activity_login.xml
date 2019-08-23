@@ -10,7 +10,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:visibility="visible" />
+        android:visibility="gone" />
 
     <RelativeLayout
         android:id="@+id/container"
@@ -36,16 +36,6 @@
             android:layout_marginRight="40dp"
             android:orientation="vertical">
 
-            <Button
-                android:id="@+id/btnIngresar"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="40dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginRight="40dp"
-                android:singleLine="true"
-                android:text="@string/ingresar"
-                android:textAllCaps="false" />
 
             <EditText
                 android:id="@+id/edtContrasenia"
@@ -63,6 +53,17 @@
                 android:hint="@string/ingresa_correo"
                 android:inputType="textEmailAddress"
                 android:singleLine="true" />
+
+            <Button
+                android:id="@+id/btnIngresar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="40dp"
+                android:singleLine="true"
+                android:text="@string/ingresar"
+                android:textAllCaps="false" />
 
             <TextView
                 android:id="@+id/btnQuieroRegistrarme"
