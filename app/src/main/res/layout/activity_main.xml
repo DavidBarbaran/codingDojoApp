@@ -1,32 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <ImageView
+        android:id="@+id/img"
         android:layout_width="50dp"
         android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
         android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp20"
         android:src="@mipmap/ic_launcher" />
 
-    <EditText
-        android:id="@+id/edtCorreo"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/img"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="40dp"
         android:layout_marginTop="40dp"
-        android:hint="@string/ingresa_correo"
-        android:singleLine="true" />
+        android:layout_marginRight="40dp"
+        android:orientation="vertical">
 
-    <EditText
-        android:id="@+id/edtContrasenia"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:hint="@string/app_contrasenia"
-        android:singleLine="true" />
+        <EditText
+            android:id="@+id/edtCorreo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/ingresa_correo"
+            android:inputType="textEmailAddress"
+            android:singleLine="true" />
 
-</LinearLayout>
+        <EditText
+            android:id="@+id/edtContrasenia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="@string/app_contrasenia"
+            android:inputType="textPassword"
+            android:singleLine="true" />
+
+        <Button
+            android:id="@+id/btnIngresar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="40dp"
+            android:singleLine="true"
+            android:text="@string/ingresar"
+            android:textAllCaps="false" />
+
+        <TextView
+            android:id="@+id/btnQuieroRegistrarme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:selectableItemBackground"
+            android:padding="5dp"
+            android:text="@string/quiero_registrarme"
+            android:textSize="@dimen/dp12" />
+
+        <TextView
+            android:id="@+id/btnOlvideContrasenia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:selectableItemBackground"
+            android:padding="5dp"
+            android:text="@string/olvide_contrasenia"
+            android:textSize="@dimen/dp12" />
+    </LinearLayout>
+
+</RelativeLayout>

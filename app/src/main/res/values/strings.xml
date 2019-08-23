@@ -2,4 +2,7 @@
     <string name="app_name">CodingDojoApp</string>
     <string name="ingresa_correo">Ingresa tu correo</string>
     <string name="app_contrasenia">Ingresa tu contraseña</string>
+    <string name="ingresar">Ingresar</string>
+    <string name="olvide_contrasenia">Olvidé mi contraseña</string>
+    <string name="quiero_registrarme">Quiero registrarme</string>
 </resources>
