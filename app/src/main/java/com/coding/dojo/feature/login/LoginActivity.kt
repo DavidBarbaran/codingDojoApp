@@ -7,6 +7,7 @@ import androidx.lifecycle.Observer
 import com.coding.dojo.R
 import com.coding.dojo.model.Usuario
 import kotlinx.android.synthetic.main.activity_login.*
+import org.koin.android.ext.android.inject
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
 
