@@ -22,7 +22,7 @@
             android:ems="10"
             android:id="@+id/etCorreo"
             android:hint="Correo" android:layout_marginStart="8dp" app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="80"
+            android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="80dp"
             app:layout_constraintTop_toTopOf="parent"/>
     <EditText
             android:layout_width="wrap_content"
