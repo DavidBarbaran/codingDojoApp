@@ -1,10 +1,12 @@
 package com.coding.dojo.feature.login
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import com.coding.dojo.R
+import com.coding.dojo.feature.registro.RegistroActivity
 import com.coding.dojo.model.Usuario
 import kotlinx.android.synthetic.main.activity_login.*
 import org.koin.android.ext.android.inject
@@ -32,7 +34,7 @@ class LoginActivity : AppCompatActivity() {
         }
 
         btnQuieroRegistrarme.setOnClickListener {
-
+            startActivity(Intent(this, RegistroActivity::class.java))
         }
     }
 
