@@ -6,6 +6,7 @@ import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import com.coding.dojo.R
+import com.coding.dojo.feature.recuperar.RecuperarContraseniaActivity
 import com.coding.dojo.feature.registro.RegistroActivity
 import com.coding.dojo.model.Usuario
 import kotlinx.android.synthetic.main.activity_login.*
@@ -35,6 +36,10 @@ class LoginActivity : AppCompatActivity() {
 
         btnQuieroRegistrarme.setOnClickListener {
             startActivity(Intent(this, RegistroActivity::class.java))
+        }
+
+        btnOlvideContrasenia.setOnClickListener {
+            startActivity(Intent(this, RecuperarContraseniaActivity::class.java))
         }
     }
 
