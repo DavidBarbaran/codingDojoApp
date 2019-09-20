@@ -10,12 +10,14 @@
 
     <EditText
         android:id="@+id/recuperarEdit"
+        android:hint="Ingrese su usuario"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="36dp"
         android:layout_marginEnd="36dp" />
 
-    <com.google.android.material.button.MaterialButton
+    <Button
+        android:id="@+id/recuperateButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="36dp"
@@ -24,8 +26,6 @@
         android:background="@color/colorPrimary"
         android:text="Recuperar contraseña"
         android:textAllCaps="false"
-        android:textColor="@android:color/white"
-        app:cornerRadius="136dp"
-        app:backgroundTint="@color/colorPrimary" />
+        android:textColor="@android:color/white" />
 
 </LinearLayout>
